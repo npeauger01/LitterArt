@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revue Littérart - Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+</head>
+    <header>
+        <div class="container">
+            <nav>
+              <h1 class="logo">
+                <a href="index.html">Littér<em>Art</em></a>
+            </h1>                
+            <div class="burger-menu" id="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="revues.html">Bulletin Ciné</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="equipe.html">Équipe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    </div>
+    <main>
+        <section id="articles">
+            <div class="container">
+                <nav class="article-nav">
+                    <ul>
+                        <li><a href="#all-posts" class="active">Articles Récents</a></li>
+                        <li><a href="#cinema">Cinéma</a></li>
+                        <li><a href="#literature">Littérature</a></li>
+                        <li><a href="#bd">Bande dessinée</a></li>
+                        <li><a href="#festival">Festivals</a></li>
+                    </ul>
+                </nav> <br>
+                   <!-- Barre de recherche -->
+                <div class="search-container">
+                    <input type="text" id="search-bar" class="search-bar" placeholder="Rechercher un article...">
+                    <button id="clear-search" class="clear-search-btn" aria-label="Effacer la recherche">
+                        &times; <!-- Icône de croix -->
+                    </button>
+                </div>
+
+                   <!-- Conteneur pour les résultats filtrés -->
+                        <div id="filtered-results" class="article-filtered" style="display: none;">
+                            <h2 id="filtered-title"></h2> <!-- Titre pour les résultats filtrés -->
+                            <!-- Les articles filtrés apparaîtront ici -->
+                        </div>
+
+                <!-- Section Tous les posts -->
+                <section id="all-posts" class="article-section">
+                    <h2>Articles Récents</h2>
+                    <div class="article-grid">
+
+                <!-- Article 1 -->
+                    <div class="article-item">
+                        <a href="articles/Articles_récents/Moviejournal.html" data-pdf="a_son_image.html">
+                        <img src="articles/illustrations/MovieJournal.png" alt="Article 1">
+                        <h3>Movie Journal (Jonas Mekas), mémoire critique</h3>
+                        <p>Il y a cinq ans que Jonas Mekas mourrait. Il laissa derrière lui une filmographie merveilleuse, et ce livre : le Movie Journal...</p>
+
+                    </a>
+                <!-- Bouton qui ouvre le même modal -->
+                <a href="articles/Articles_récents/Moviejournal.html" class="read-article-btn" data-pdf="a_son_image.html" style="color: white;">Lire l'article</a>
+                                </div>
+
+                <!-- Article 2 -->
+                    <div class="article-item">
+                        <a href="articles/Articles_récents/Terrifier.html" data-pdf="a_son_image.html">
+                            <img src="articles/illustrations/Terrifier.png" alt="Article 1">
+                        <h3>Terrifier de Damien Leone, jubilation et tripaille</h3>
+                        <p>Terrifier aurait pu être une nouvelle création racoleuse de mauvais films d’horreurs profitant de ce drôle de phénomène apparu...</p>
+
+                    </a>
+        <!-- Bouton qui ouvre le même modal -->
+        <a href="articles/Articles_récents/Terrifier.html" class="read-article-btn" data-pdf="a_son_image.html" style="color: white;">Lire l'article</a>
+    </div>
+                        <!-- Article 3 -->
+                        <div class="article-item">
+                            <a href="articles/Articles_récents/Megalopolis.html" data-pdf="a_son_image.html">
+                                <img src="articles/illustrations/Megolopolis.png" alt="Article 1">
+                            <h3>Mégalopolis, oeuvre acerbe</h3>
+                            <p>A l’heure où ces lignes sont écrites, Megalopolis signe un énorme échec financier. <br> Le plaindra-t-on ? Vous inciterai-je à regarder ce film...</p>
+
+                        </a>
+            <!-- Bouton qui ouvre le même modal -->
+            <a href="articles/Articles_récents/Megalopolis.html" class="read-article-btn" data-pdf="a_son_image.html" style="color: white;">Lire l'article</a>
+        </div>
+
+                    <div class="article-item">
+                        <a href="articles/Articles_récents/FLarthurWE.html" data-pdf="a_son_image.html">
+                            <img src="articles/illustrations/FestivalLumirerEND.png" alt="Article 1">
+                        <h3>Festival Lumière : Week end cinéma pour Arthur</h3>
+                        <p>Après une première journée peu remplie, le week-end est le moment de voir quelques
+                            films du programme du festival Lumière 2024...</p>
+                    </a>
+                <!-- Bouton qui ouvre le même modal -->
+                <a href="articles/Articles_récents/FLarthurWE.html" class="read-article-btn" data-pdf="a_son_image.html" style="color: white;">Lire l'article</a>
+                </div>
+                <div class="article-item">
+                    <a href="articles/Articles_récents/FLJ6.html" data-pdf="a_son_image.html">
+                        <img src="articles/illustrations/FestivalLMJ6.png" alt="Article 1">
+                    <h3>Festival lumière - Journal de bord : Jour 6</h3>
+                    <p>Il faut une fin à toute bonne chose, et le Festival Lumière se termine. Cette dernière entrée du journal de bord...</p>
+                </a>
+            <!-- Bouton qui ouvre le même modal -->
+            <a href="articles/Articles_récents/FLJ6.html" class="read-article-btn" data-pdf="a_son_image.html" style="color: white;">Lire l'article</a>
+            </div>
+            <div class="article-item">
+                <a href="articles/Articles_récents/FLJ5.html" data-pdf="a_son_image.html">
+                    <img src="articles/illustrations/FestivalLMJ5.png" alt="Article 1">
+                <h3>Festival lumière - Journal de bord : Jour 5</h3>
+                <p>Avant-dernier jour du festival Lumière. La fatigue est toujours présente mais je tiens bon et les films visionnés...</p>
+            </a>
+        <!-- Bouton qui ouvre le même modal -->
+        <a href="articles/Articles_récents/FLJ5.html" class="read-article-btn" data-pdf="a_son_image.html" style="color: white;">Lire l'article</a>
+        </div>
+                        
+                </section>
+                
+                <!-- Section Cinéma -->
+                <section id="cinema" class="article-section">
+                    <h2>Cinéma</h2>
+                    <div class="article-grid">
+                        <!-- Article 1 -->
+                        <div class="article-item">
+                            <a href="articles/cinéma/ombre du feu.html" data-pdf="a_son_image.html">
+                                <img src="articles/illustrations/ombrefeu.png" alt="Article 1">
+                            <h3>L’Ombre du feu (2024) – Shin’ya Tsukamoto</h3>
+                            <p>Quiconque a déjà posé ses yeux sur une œuvre de Tsukamoto sait qu’il ne part jamais en terrain conquis...</p>
+                        </a>
+        <!-- Bouton qui ouvre le même modal -->
+        <a href="articles/cinéma/ombre du feu.html" class="read-article-btn" data-pdf="a_son_image.html" style="color: white;">Lire l'article</a>
+    </div>
+                        <!-- Article 2 -->
+                        <div class="article-item">
+                            <a href="a_son_image.html" data-pdf="a_son_image.html">
+                                <img src="articles/illustrations/aSonImage.png" alt="Article 1">
+                            <h3>À son image - Thierry de Peretti</h3>
+                            <p>C’est autour des images et de la lutte politique que Thierry de Peretti revient sur sa terre natale. Rétrospection aussi bien historique que formelle, À son image nous donne à voir ...</p>
+                        </a>
+        <!-- Bouton qui ouvre le même modal -->
+        <a href="a_son_image.html" class="read-article-btn" data-pdf="a_son_image.html" style="color: white;">Lire l'article</a>
+    </div>
+                        <!-- Article 3 -->
+                        <div class="article-item">
+                            <a href="articles/cinéma/LokiS2.html" data-pdf="a_son_image.html">
+                                <img src="articles/illustrations/LokiS2.png" alt="Article 1">
+                            <h3>Loki Saison 2 : Science / Fiction</h3>
+                            <p>
+                                Tic Tac Tic Tac. Le générique commence sur le son d’une horloge. Le temps avance inlassablement, indifférent à tous les changements qui s’opèrent...</p>
+                        </a>
+        <!-- Bouton qui ouvre le même modal -->
+        <a href="articles/cinéma/LokiS2.html" class="read-article-btn" data-pdf="a_son_image.html" style="color: white;">Lire l'article</a>
+    </div>
+                </section>
+
+                <!-- Section Littérature -->
+                <section id="literature" class="article-section">
+                    <h2>Littérature</h2>
+                    <div class="article-grid">
+                        <!-- Article 1 -->
+                        <div class="article-item">
+                            <a href="articles/litterature/larafle.html" data-pdf="a_son_image.html">
+                                <img src="articles/illustrations/raflenotable.png" alt="Article 1">
+                            <h3>La rafle des notables ou la rafle oubliée</h3>
+                            <p>Dans l'inconscient populaire, l'acception « rafle » en concomitance avec le contexte mortifère de la Shoah renvoie au Vel d'Hiv, cette opération appelée...</p>
+                        </a>
+        <!-- Bouton qui ouvre le même modal -->
+        <a href="articles/litterature/larafle.html" class="read-article-btn" data-pdf="a_son_image.html" style="color: white;">Lire l'article</a>
+    </div>
+                        <!-- Article 2 -->
+                        <div class="article-item">
+                            <a href="articles/litterature/ramuz.html" data-pdf="a_son_image.html">
+                                <img src="articles/illustrations/antipoetique.png" alt="Article 1">
+                            <h3>Charles Ferdinand Ramuz : L'écrivain n'est pas un homme de lettres</h3>
+                            <p>Il y a le Passage du poète, Les Circonstances de la vie, la Présence de la mort, La Beauté sur la  terre...</p>
+                        </a>
+        <!-- Bouton qui ouvre le même modal -->
+        <a href="articles/litterature/ramuz.html" class="read-article-btn" data-pdf="a_son_image.html" style="color: white;">Lire l'article</a>
+    </div>
+                        <!-- Article 3 -->
+                        <div class="article-item">
+                            <a href="articles/litterature/celine.html" data-pdf="a_son_image.html">
+                                <img src="articles/illustrations/celine.png" alt="Article 1">
+                            <h3>GUERRE : Ferdinand avant Céline, anatomie d’un atrabilaire.</h3>
+                            <p>Nous sommes en 2021 lorsque Louis-Ferdinand Céline (1894-1961) effectue sa résurrection littéraire...</p>
+                        </a>
+        <!-- Bouton qui ouvre le même modal -->
+        <a href="articles/litterature/celine.html" class="read-article-btn" data-pdf="a_son_image.html" style="color: white;">Lire l'article</a>
+    </div>
+                </section>
+
+                <!-- Section Bande dessinée -->
+                <section id="bd" class="article-section">
+                    <h2>Bande dessinée</h2>
+                    <div class="article-grid">
+                        <!-- Article 1 -->
+                        <div class="article-item">
+                            <a href="articles/bd/spidermanultimate.html" data-pdf="a_son_image.html">
+                                <img src="articles/illustrations/spiderman.png" alt="Article 1">
+                            <h3>Des nouvelles du front : Ultimate Spider-Man par Jonathan Hickman et pas que Marco Checchetto</h3>
+                            <p>Le premier numéro d’Ultimate Spider-Man m'avait fait l'effet d'une bombe...</p>
+                        </a>
+        <!-- Bouton qui ouvre le même modal -->
+        <a href="articles/bd/spidermanultimate.html" class="read-article-btn" data-pdf="a_son_image.html" style="color: white;">Lire l'article</a>
+    </div>
+                        <!-- Article 2 -->
+                        <div class="article-item">
+                            <a href="articles/bd/powerRangers.html" data-pdf="a_son_image.html">
+                                <img src="articles/illustrations/powerrangers.png" alt="Article 1">
+                            <h3>Power Rangers – The return d’Amy Jo Johnson et Nico Leon</h3>
+                            <p>Power Rangers. Oui, cela peut faire sourire. Le hold-up de Haim Saban dans les années 90 qui reprenait...</p>
+                        </a>
+        <!-- Bouton qui ouvre le même modal -->
+        <a href="articles/bd/powerRangers.html" class="read-article-btn" data-pdf="a_son_image.html" style="color: white;">Lire l'article</a>
+    </div>
+                        <!-- Article 3 -->
+                        <div class="article-item">
+                            <a href="articles/bd/Castilladrive.html" data-pdf="a_son_image.html">
+                                <img src="articles/illustrations/castilladrive.png" alt="Article 1">
+                            <h3>Castilla Drive – Anthony Pastor</h3>
+                            <p>Je découvre Castilla Drive lors de la 11ᵉ représentation des Vendanges Graphiques, festival de bandes dessinées annuel où 9ᵉ art et vins se confondent. La couverture de...</p>
+                        </a>
+        <!-- Bouton qui ouvre le même modal -->
+        <a href="articles/bd/Castilladrive.html" class="read-article-btn" data-pdf="a_son_image.html" style="color: white;">Lire l'article</a>
+    </div>
+                </section>
+
+                <!-- Section Festival  -->
+                <section id="festival" class="article-section">
+                    <h2>Festivals</h2>
+                    <div class="article-grid">
+                        <!-- Article 1 -->
+                        <div class="article-item">
+                            <a href="articles/Festivals/FLJ4.html" data-pdf="a_son_image.html">
+                                <img src="articles/illustrations/FLJ4.png" alt="Article 1">
+                            <h3>Festival lumière - Journal de bord : Jour 4</h3>
+                            <p>Après une pause bien méritée, je suis de retour pour deux films du grand maître Kurosawa. Et j’avais dit que Monsieur Smith au Sénat...</p>
+                        </a>
+        <!-- Bouton qui ouvre le même modal -->
+        <a href="articles/Festivals/FLJ4.html" class="read-article-btn" data-pdf="a_son_image.html" style="color: white;">Lire l'article</a>
+    </div>
+                        <!-- Article 2 -->
+                        <div class="article-item">
+                            <a href="articles/Festivals/FLJ3.html" data-pdf="a_son_image.html">
+                            <img src="articles/illustrations/FLJ3.png" alt="Article 1">
+                            <h3>Festival lumière - Journal de bord : Jour 3</h3>
+                            <p>Un seul film pour aujourd’hui, mais pas n’importe quel film. Je brave ma fatigue, m’installe confortablement dans la salle et m’apprête...</p>
+                        </a>
+        <!-- Bouton qui ouvre le même modal -->
+        <a href="articles/Festivals/FLJ3.html" class="read-article-btn" data-pdf="a_son_image.html" style="color: white;">Lire l'article</a>
+    </div>
+                        <!-- Article 3 -->
+                        <div class="article-item">
+                            <a href="articles/Festivals/FLJ2.html" data-pdf="a_son_image.html">
+                                <img src="articles/illustrations/FLJ2.png" alt="Article 1">
+                            <h3>Festival lumière : Journal de bord : Jour 2</h3>
+                            <p>Après avoir bien dépensé mon SMIC au salon du DVD la veille, je brave la pluie pour mon deuxième jour de festival...</p>
+                        </a>
+        <!-- Bouton qui ouvre le même modal -->
+        <a href="articles/Festivals/FLJ2.html" class="read-article-btn" data-pdf="a_son_image.html" style="color: white;">Lire l'article</a>
+    </div>
+
+    <!-- Article 3 -->
+    <div class="article-item">
+        <a href="articles/Festivals/FLJ1.html" data-pdf="a_son_image.html">
+            <img src="articles/illustrations/FLJ1.png" alt="Article 1">
+        <h3>Festival Lumière - Jour 1 : Soleil Rouge de Terrence Young et L’Aveu de Costa-Gavras</h3>
+        <p>Le Festival Lumière a officiellement commencé. Certes, je n’ai rien vu samedi...</p>
+    </a>
+<!-- Bouton qui ouvre le même modal -->
+<a href="articles/Festivals/FLJ1.html" class="read-article-btn" data-pdf="a_son_image.html" style="color: white;">Lire l'article</a>
+</div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Littér<em>Art</em>. Tous droits réservés.</p>
+    </footer>
+    <a href="#" class="back-to-top" onclick="scrollToTop(event)">
+        &#8593; <!-- Flèche vers le haut -->
+    </a>
+    <script src="script.js"></script>
+</body>
+</html>

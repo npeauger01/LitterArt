@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revue Littérart - Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+</head>
+    <header>
+        <div class="container">
+            <nav>
+              <h1 class="logo">
+                <a href="index.html">Littér<em>Art</em></a>
+            </h1>                
+            <div class="burger-menu" id="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="revues.html">Bulletin Ciné</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="equipe.html">Équipe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="last-review">
+        <div class="container">
+            <a href="bulletins/bulletin_5.html" class="review-highlight">
+                <div class="review-image">
+                    <img src="element_site/index/rvindex (1).png" alt="Dernière Revue" />
+                </div>
+                <div class="review-details">
+                    <h2>Bulletin n°5 : État des lieux de la Science Fiction</h2>
+                    <p>Découvrez notre dernier bulletin cinéma consacré à la science fiction !</p>
+                    <span class="cta-btn">Découvrir</span>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="revues">
+        <div class="container">
+            <h2>Nos Bulletins Ciné </h2>
+            <p>Retrouvez ici toutes nos revues cinéma.</p>
+    
+            <div class="revue-mosaic">
+                
+                <!-- Revue 1 -->
+                <div class="revue-card">
+                    <div class="revue-header">
+                        <span class="revue-number">Numéro 5</span> <!-- Numéro de la revue -->
+                    </div>
+                    <div class="badge-quality"> ⭐ NOUVEAU</div> <!-- Badge de qualité -->
+
+                    <div class="revue-cover">
+                        <img src="bulletins/couvertures/SF.png" alt="Parasite">
+                        <div class="overlay">
+                            <a href="bulletins/bulletin_5.html" class="download-btn">Découvrir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Revue 2 -->
+                <div class="revue-card">
+                    <div class="revue-header">
+                        <span class="revue-number">Numéro 4</span> <!-- Numéro de la revue -->
+                    </div>
+                    <div class="revue-cover">
+                        <img src="bulletins/couvertures/Britannique.png" alt="Parasite">
+                        <div class="overlay">
+                            <a href="bulletins/bulletin_4.html" class="download-btn">Découvrir</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Revue 3 -->
+                <div class="revue-card">
+                    <div class="revue-header">
+                        <span class="revue-number">Numéro 3</span> <!-- Numéro de la revue -->
+                    </div>
+                    <div class="revue-cover">
+                        <img src="bulletins/couvertures/Périot.png" alt="Parasite">
+                        <div class="overlay">
+                            <a href="bulletins/bulletin_3.html" class="download-btn">Découvrir</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Revue 4 -->
+                <div class="revue-card">
+                    <div class="revue-header">
+                        <span class="revue-number">Numéro 2</span> <!-- Numéro de la revue -->
+                    </div>
+                    <div class="revue-cover">
+                        <img src="bulletins/couvertures/Mekas.png" alt="Parasite">
+                        <div class="overlay">
+                            <a href="bulletins/bulletin_2.html" class="download-btn">Découvrir</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Revue 5 -->
+                <div class="revue-card">
+                    <div class="revue-header">
+                        <span class="revue-number">Numéro 1</span> <!-- Numéro de la revue -->
+                    </div>
+                    <div class="revue-cover">
+                        <img src="element_site/bulletins ciné/bc1.png" alt="Parasite">
+                        <div class="overlay">
+                            <a href="bulletins/bulletin_1.html" class="download-btn">Découvrir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="section-sans-scroll">
+        <div></div>
+        <iframe src="carroussel.html" style="width: 100%; border: none;" onload="this.style.height=this.contentWindow.document.body.scrollHeight + 'px'"></iframe>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Littér<em>Art</em>. Tous droits réservés.</p>
+    </footer>
+    <a href="#" class="back-to-top" onclick="scrollToTop(event)">
+        &#8593; <!-- Flèche vers le haut -->
+    </a>
+       
+    <script src="script.js"></script>
+</body>
+</html>
