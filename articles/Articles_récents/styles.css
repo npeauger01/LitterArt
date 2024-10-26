@@ -1,0 +1,54 @@
+body {
+    max-width: 1000px;
+    height: 500px;
+    max-height: 1500px;
+    border: solid black 3px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 'scale' ease-in-out;
+}
+
+div:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    scale: 105%;
+}
+
+div:active {
+    background-color: red;
+    color: blue;
+}
+
+div:checked {
+    display: none;
+}
+
+h1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: none;
+}
+
+a:checked {
+    background-color: green;
+}
