@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revue Littérart - Accueil</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+    <header>
+        <div class="container">
+            <nav>
+              <h1 class="logo">
+                <a href="/index.html">Littér<em>Art</em></a>
+            </h1>                
+            <div class="burger-menu" id="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="/index.html">Accueil</a></li>
+                    <li><a href="/revues.html">Bulletin Ciné</a></li>
+                    <li><a href="/articles.html">Articles</a></li>
+                    <li><a href="/equipe.html">Équipe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Section Hero -->
+    <section class="hero-template">
+        <div class="container">
+            <a href="javascript:void(0)" class="back-button" onclick="goBack()">
+                &#8592; Retour
+            </a>
+            <div class="article-head">
+                <div class="article-meta">
+                    <img src="/element_site/equipe/avatarH.png" alt="Auteur" class="author-photo">
+                    <div class="meta-info">
+                        <p class="author-name">Louis M.</p>
+                        <p class="publish-date">Publié le 16 octobre 2024</p>
+                    </div>
+                </div>
+                <h1 class="article-titre">Festival lumière - Journal de bord : Jour 3</h1>
+                <hr class="article-divider">
+            </div>
+            <div class="article-body">
+
+
+                <p>Un seul film pour aujourd’hui, mais pas n’importe quel film. Je brave ma fatigue, m’installe confortablement dans la salle et m’apprête à voir ce qui s’avérera être pour le moment le meilleur film du Festival.</p>
+
+
+
+                <p><em><strong>Monsieur Smith au Sénat de Frank Capra (1939)</strong></em></p>
+
+                <p>Quel plaisir de découvrir du Frank Capra sur grand écran ! Il est déjà l’auteur d’un film que j’adore, La vie est belle (1946), j’avais donc grande hâte de découvrir Monsieur Smith au Sénat. D’autant plus hâte qu’il y a dans le film James Stewart, peut-être mon acteur du vieil Hollywood préféré. <br>
+
+                    Il y incarne Jefferson Smith, un homme naïf et idéaliste, qui se retrouve choisi pour être sénateur des Etats-Unis. Débarquant de sa campagne, il découvre Washington et le monde cruel et corrompu de la politique américaine, notamment lorsqu’il souhaite déposer un projet de loi, gênant celle d’autres sénateurs et d’hommes d’affaires véreux.</p>
+
+
+                    <p>Le film est à charge contre la politique des Etats-Unis et est alors attaqué par des politiciens et certains membres de la presse. En effet, à la sortie du film, l’Europe entre en guerre et les Etats-Unis essayent toujours de sortir la tête de l’eau après le krach boursier de 1929. Bref ce n’était pas le bon moment pour accuser les institutions politiques américaines de corruption et de copinage avec les médias.</p>
+
+
+
+                    <img style="width: 100%;" src="/articles/imgArticle/j3_1.webp" alt="">
+
+                    <p>Cependant, Frank Capra veut aussi montrer l’efficacité de la démocratie américaine et montre les rouages de la politique, mais parle aussi d’une certaine manière de patriotisme. En effet, le personnage principal est fasciné par Washington et par les monuments et les personnages qui ont forgé l’histoire et la politique américaine. C’est un idéaliste qui croit fortement au pouvoir de son pays qui, lorsqu’il est bien utilisé, peut aider les plus démunis. Il y a une scène que j’aime particulièrement beaucoup qui a rendu le personnage principal attendrissant : lorsqu’il découvre Washington avec des yeux d’une candeur enfantine. Cette scène, qui est certes patriotique, montre également les inspirations idéales et historiques pour ce personnage. Il veut marcher dans les pas des Pères Fondateurs et d’Abraham Lincoln et il se battra pour ça.</p>
+
+                    <p>Frank Capra ne réalise pas un film naïf malgré son personnage principal. Il montre la cruauté de certains politiciens, prêts à s’acoquiner avec de riches hommes d’affaires dans un but purement égoïstes. Le spectateur n’est pas ignorant du monde de la politique et de ses magouilles. Capra le sait bien, mais Jefferson Smith lui ne le sait pas. Cette candeur touche le public, à la fois celui du film mais aussi celui du Sénat. Et il est alors particulièrement dur de voir ce personnage se faire écraser par des hommes purement égoïstes alors qu’il est plein de bonté et de générosité. On en vient à espérer qu’il abandonne.</p>
+
+
+
+                    <p>Mais nous sommes à Hollywood. Et même si je ne suis pas fan du procédé du happy end, j’espérais qu’il arrive. Le personnage principal mérite son happy end. Capra nous laisse avec une lueur d’espoir. Celle d’espérer qu’un jour un monsieur Smith, idéaliste, prenne la parole pour un monde plus juste dans lequel les institutions politiques seraient au service du peuple. Pour cela, cette note d’espoir qui me mettrait presque la larme à l’œil, le film mérite son statut de chef d’œuvre du cinéma.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <button class="share-btn" onclick="showSharePopup()">Partager cet article</button>
+            
+                <!-- Pop-up de partage caché -->
+                <div id="share-popup" class="share-popup" style="display: none;">
+                    <p>Partager cet article :</p>
+                    <input type="text" id="share-url" value="" readonly>
+                    <button onclick="copyUrl()">Copier</button>
+                    <button onclick="closeSharePopup()">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Vidéo YouTube -->
+    <section class="video-section">
+        <div class="container">
+        </div>
+    </section>
+
+    <div class="section-sans-scroll">
+        <div></div>
+        <iframe src="/carroussel.html" style="width: 100%; border: none;" onload="this.style.height=this.contentWindow.document.body.scrollHeight + 'px'"></iframe>
+    </div>
+
+
+    <!-- Footer déjà existant -->
+    <footer>
+        <p>&copy; 2024 Littér<em>Art</em>. Tous droits réservés.</p>
+    </footer>
+    <a href="#" class="back-to-top" onclick="scrollToTop(event)">
+        &#8593; <!-- Flèche vers le haut -->
+    </a>
+    <script>
+    function showSharePopup() {
+        const url = window.location.href; // URL de la page
+        const shareUrlField = document.getElementById('share-url');
+    
+        // Mettre l'URL dans le champ
+        shareUrlField.value = url;
+    
+        // Afficher le pop-up
+        document.getElementById('share-popup').style.display = 'block';
+    
+        // Sélectionner automatiquement le texte de l'URL
+        shareUrlField.focus(); // Met le focus sur le champ de texte
+        shareUrlField.select(); // Sélectionne le texte
+        shareUrlField.setSelectionRange(0, shareUrlField.value.length); // Pour mobiles
+    }
+    
+    function closeSharePopup() {
+        document.getElementById('share-popup').style.display = 'none'; // Fermer le pop-up
+    }
+    
+    function copyUrl() {
+        const urlField = document.getElementById('share-url');
+        urlField.select(); // Sélectionner l'URL
+        document.execCommand('copy'); // Copier l'URL
+        alert('URL copiée dans le presse-papier !');
+    }
+    
+    // Exemple pour montrer le pop-up
+    document.querySelector('.share-popup').classList.add('show');
+    
+    function goBack() {
+        const parentPage = "articles.html"; // Page parent par défaut
+    
+        // Vérifie si la page précédente est dans ton site
+        if (document.referrer && document.referrer.includes(window.location.hostname)) {
+            window.history.back(); // Retour à la page précédente si elle est interne au site
+        } else {
+            window.location.href = parentPage; // Redirige vers la page parent
+        }
+    }
+    // Fonctionnalité du menu hamburger
+document.getElementById('burger-menu').addEventListener('click', function() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('menu-active'); // Affiche ou cache le menu
+});
+const burgerMenu = document.getElementById('burger-menu');
+const navLinks = document.getElementById('nav-links');
+
+burgerMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+function scrollToTop(event) {
+  event.preventDefault(); // Empêche l'ajout d'une nouvelle entrée dans l'historique
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Défilement fluide vers le haut
+  });
+}
+    </script>
+        
+</body>
+</html>

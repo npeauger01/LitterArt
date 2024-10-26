@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revue Littérart - Accueil</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+    <header>
+        <div class="container">
+            <nav>
+              <h1 class="logo">
+                <a href="/index.html">Littér<em>Art</em></a>
+            </h1>                
+            <div class="burger-menu" id="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="/index.html">Accueil</a></li>
+                    <li><a href="/revues.html">Bulletin Ciné</a></li>
+                    <li><a href="/articles.html">Articles</a></li>
+                    <li><a href="/equipe.html">Équipe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Section Hero -->
+    <section class="hero-template">
+        <div class="container">
+            <a href="javascript:void(0)" class="back-button" onclick="goBack()">
+                &#8592; Retour
+            </a>
+            <div class="article-head">
+                <div class="article-meta">
+                    <img src="/element_site/equipe/erwan mas.png" alt="Auteur" class="author-photo">
+                    <div class="meta-info">
+                        <p class="author-name">Erwan Mas</p>
+                        <p class="publish-date">Publié le 12 mars 2024</p>
+                    </div>
+                </div>
+                <h1 class="article-titre">Castilla Drive – Anthony Pastor </h1>
+                <hr class="article-divider">
+            </div>
+            <div class="article-body">
+
+                <p>Je découvre <em>Castilla Drive</em> lors de la 11ᵉ représentation des Vendanges Graphiques, festival de bandes dessinées annuel où 9ᵉ art et vins se confondent. La couverture de Castilla Drive me saute aux yeux dans le stand “librairie” au centre de la Salle de l’Arbuel de Condrieu. C’est sa référence aux affiches de films américains qui me frappe, et cet aspect ne s’arrête pas ici puisque les dessins nous rapprochent du western hollywoodien. Et c’est lors de ma discussion avec son auteur : Anthony Pastor, que je comprends que ces types de films, à la John Ford, font partie de l’aura de l’auteur. Ces films l’ont beaucoup marqué, et nous le ressentons dans ses dessins et son histoire. Concernant le scénario, Anthony Pastor rit d’ailleurs de la tournure “film de Noël” que prendra son ouvrage, jusqu’à la dernière case. </p>
+
+                <img width="100%;" src="/articles/imgArticle/catilla.webp" alt="">
+
+                <p>Sally et Osvaldo se rencontrent dans une ambiance à l’aura mortuaire : l’homme cherche celui qui a tenté de le tuer, et il réclame l’aide de la détective Sally Sallinger : son mari n’a donné aucune nouvelle depuis trois ans. Osvaldo (poète) tombe amoureux de la femme tandis qu’elle se montre réticente ; seulement, à force de le voir tous les jours – puisqu’il loge dans l’onglerie de son amie, Pat – un lien se créera et cela ira au-delà de la simple relation détective et client comme nous pouvons l’imaginer. Pourtant, la recherche du tueur et le retour du mari de Sally ramènera nos deux protagonistes à la réalité funeste. Un certain équilibre entre les deux ambiances du livre. </p>
+
+                <p>Je suis alors plongé dans une histoire qui m’inquiète, me fait sourire, je suis surtout plongé dans un univers troublant : il neige dans une Amérique où il devrait pourtant faire chaud. La ville semble perdue, comme dans un rêve. Je suis alors, à la fois, projeté loin de l’univers westernien que j’évoquais précédemment au vu du temps hivernal – loin du soleil chaud de <em>The searchers</em> par exemple – et pourtant le western se rapproche de la bande dessinée à voir l’aspect désertique autour de la ville.</p>
+
+
+
+                <p>La question de l’amour est mélangée au polar, au thriller. Trois hommes se battent pour séduire ou garder Sally : son mari – ou ancien mari, à la vue du temps de son absence – Osvaldo, et l’inspecteur Ray. <br>
+
+                    L’enquête sur la tentative de meurtre sur le poète est quelque peu délaissée pour laisser place à ce triangle amoureux, ce combat pour un amour. <br>
+                    
+                    Anthony Pastor livre avec talent une œuvre hors du commun et magnifique, tout cela avec une passion folle. Je ressens ce goût qu’a l’auteur pour la BD par son œuvre, mais aussi par la discussion que j’ai pu avoir avec lui lors du festival lors de laquelle nous avons pu évoquer Bernie Wrightson, ou plus globalement l’industrie du comics et de la bande dessinée. J’entendais la discussion qu’il avait, aussi, avec une personne devant moi dans laquelle je pus entendre parler de John Ford. Le cinéma et la bande dessinée sont deux arts qui ont marqué et qui marquent l’œuvre d’Anthony Pastor.</p>
+
+
+                    <hr> <br>
+
+                    <p> <em>Castilla Drive</em> - Anthony Pastor (2012) <br>
+
+                        Vendanges Graphiques : <a href="">https://www.vendanges-graphiques.fr/</a> </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <button class="share-btn" onclick="showSharePopup()">Partager cet article</button>
+            
+                <!-- Pop-up de partage caché -->
+                <div id="share-popup" class="share-popup" style="display: none;">
+                    <p>Partager cet article :</p>
+                    <input type="text" id="share-url" value="" readonly>
+                    <button onclick="copyUrl()">Copier</button>
+                    <button onclick="closeSharePopup()">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Vidéo YouTube -->
+    <section class="video-section">
+        <div class="container">
+            <h2>Vidéo YouTube en rapport avec l'article</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/9hWoWeIe3jU?si=-fHrhYTqypq5L6aG" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-sans-scroll">
+        <div></div>
+        <iframe src="/carroussel.html" style="width: 100%; border: none;" onload="this.style.height=this.contentWindow.document.body.scrollHeight + 'px'"></iframe>
+    </div>
+
+
+    <!-- Footer déjà existant -->
+    <footer>
+        <p>&copy; 2024 Littér<em>Art</em>. Tous droits réservés.</p>
+    </footer>
+    <a href="#" class="back-to-top" onclick="scrollToTop(event)">
+        &#8593; <!-- Flèche vers le haut -->
+    </a>
+    <script>
+    function showSharePopup() {
+        const url = window.location.href; // URL de la page
+        const shareUrlField = document.getElementById('share-url');
+    
+        // Mettre l'URL dans le champ
+        shareUrlField.value = url;
+    
+        // Afficher le pop-up
+        document.getElementById('share-popup').style.display = 'block';
+    
+        // Sélectionner automatiquement le texte de l'URL
+        shareUrlField.focus(); // Met le focus sur le champ de texte
+        shareUrlField.select(); // Sélectionne le texte
+        shareUrlField.setSelectionRange(0, shareUrlField.value.length); // Pour mobiles
+    }
+    
+    function closeSharePopup() {
+        document.getElementById('share-popup').style.display = 'none'; // Fermer le pop-up
+    }
+    
+    function copyUrl() {
+        const urlField = document.getElementById('share-url');
+        urlField.select(); // Sélectionner l'URL
+        document.execCommand('copy'); // Copier l'URL
+        alert('URL copiée dans le presse-papier !');
+    }
+    
+    // Exemple pour montrer le pop-up
+    document.querySelector('.share-popup').classList.add('show');
+    
+    function goBack() {
+        const parentPage = "articles.html"; // Page parent par défaut
+    
+        // Vérifie si la page précédente est dans ton site
+        if (document.referrer && document.referrer.includes(window.location.hostname)) {
+            window.history.back(); // Retour à la page précédente si elle est interne au site
+        } else {
+            window.location.href = parentPage; // Redirige vers la page parent
+        }
+    }
+    // Fonctionnalité du menu hamburger
+document.getElementById('burger-menu').addEventListener('click', function() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('menu-active'); // Affiche ou cache le menu
+});
+const burgerMenu = document.getElementById('burger-menu');
+const navLinks = document.getElementById('nav-links');
+
+burgerMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+function scrollToTop(event) {
+  event.preventDefault(); // Empêche l'ajout d'une nouvelle entrée dans l'historique
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Défilement fluide vers le haut
+  });
+}
+    </script>
+        
+</body>
+</html>

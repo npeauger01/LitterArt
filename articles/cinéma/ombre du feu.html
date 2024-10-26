@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revue Littérart - Accueil</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+    <header>
+        <div class="container">
+            <nav>
+              <h1 class="logo">
+                <a href="/index.html">Littér<em>Art</em></a>
+            </h1>                
+            <div class="burger-menu" id="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="/index.html">Accueil</a></li>
+                    <li><a href="/revues.html">Bulletin Ciné</a></li>
+                    <li><a href="/articles.html">Articles</a></li>
+                    <li><a href="/equipe.html">Équipe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Section Hero -->
+    <section class="hero-template">
+        <div class="container">
+            <a href="javascript:void(0)" class="back-button" onclick="goBack()">
+                &#8592; Retour
+            </a>
+            <div class="article-head">
+                <div class="article-meta">
+                    <img src="/element_site/equipe/snakier.png" alt="Auteur" class="author-photo">
+                    <div class="meta-info">
+                        <p class="author-name">Snakier</p>
+                        <p class="publish-date">Publié le 25 Septembre 2024</p>
+                    </div>
+                </div>
+                <h1 class="article-titre">L’Ombre du feu (2024) – Shin’ya Tsukamoto</h1>
+                <hr class="article-divider">
+            </div>
+            <div class="article-body">
+
+                <p>Quiconque a déjà posé ses yeux sur une œuvre de Tsukamoto sait qu’il ne part jamais en terrain conquis, tant son univers est aussi foisonnant que particulier. Que ce soit son premier film, Tetsuo (1989), œuvre foutraque, brutale et agressive ; ou son, désormais, avant-dernier long-métrage, Killing (2018), chanbara crépusculaire et contemplatif, les œuvres de Tsukamoto sont toujours surprenantes et uniques.</p>
+
+                <p>L’Ombre du feu poursuit une trilogie thématique débutée avec Fires on the Plain (2014), puis poursuivie avec Killing, dont l’objectif est de revenir dans le passé du Japon, et particulièrement ici en période d’après-guerre, et des traumatismes que cette dernière a engendrés. Mais Tsukamoto ne fait pas comme tout le monde, commence son film de manière quasi muette, et déplie son récit et son propos à travers quelques scènes présentant tour à tour ses personnages : une femme qui vit seule et se prostitue pour vivre, un enfant chapardeur, et un soldat sans le sou à la recherche de la chaleur d’un foyer. Un apparent bonheur, vite évacué par le cinéaste à travers des séquences ellipsées à grand renfort de fondus enchaînés, suivi de la réalité historique : la femme a perdu mari et enfant, l’enfant ses parents, et le soldat revient traumatisé de la guerre, et sera le premier personnage évacué du récit, son syndrome post-traumatique finissant par avoir raison de lui, dans une séquence de violence sidérante aussi bien pour les personnages que pour le spectateur.</p>
+
+                <p>Mais après une première partie dans une maison qui sent le soufre, centrée sur une relation entre trois puis deux personnages nouant des liens familiaux de circonstances – on se croirait chez Kore-Eda - le film, déjà surprenant jusque-là, opère un nouveau changement brutal. Ce huis clos est filmé au plus près des visages et des corps dans une ambiance oppressante et étouffante, avant que Tsukamoto bifurque au grand air. L’enfant erre avec un nouveau personnage jusque-là inconnu, dont on finira par découvrir les motivations dans les derniers instants avant qu’il ne disparaisse à son tour. L’occasion pour Tsukamoto de décrire une nouvelle facette des survivants de la guerre, mûs par une volonté de justice, de réparation, de vengeance, là encore dans une dernière séquence d’une violence inouïe, froide, sous le regard stoïque de cet enfant bringuebalé de part et d’autre et témoin de toutes les horreurs.</p>
+
+                <p>Tsukamoto opère alors une dernière bifurcation sous forme de rédemption pour l’enfant auparavant chapardeur, dans une séquence bouleversante avec un restaurateur dont tout passera uniquement par les gestes, et où l’émotion pointe lors du don d’un simple bol de nouilles. Un dernier regard sur des soldats, un don d’un cahier d’école, un dernier coup de feu, et voilà peut-être enfin un signe d’espoir pour cet enfant qui, dans un ultime fondu enchaîné, disparaîtra dans la foule de cette société japonaise en reconstruction. Mais cet espoir d’une vie meilleure est une chimère pour un Tsukamoto ayant déjà montré par le passé - avec Tetsuo, Tokyo Fist (1995), Bullet Ballet (1998) ou A Snake of June (2002) - tout le mal qu’il pensait de la société japonaise contemporaine.
+
+                </p>
+
+
+                <button class="share-btn" onclick="showSharePopup()">Partager cet article</button>
+            
+                <!-- Pop-up de partage caché -->
+                <div id="share-popup" class="share-popup" style="display: none;">
+                    <p>Partager cet article :</p>
+                    <input type="text" id="share-url" value="" readonly>
+                    <button onclick="copyUrl()">Copier</button>
+                    <button onclick="closeSharePopup()">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Vidéo YouTube -->
+    <section class="video-section">
+        <div class="container">
+        </div>
+    </section>
+
+    <div class="section-sans-scroll">
+        <div></div>
+        <iframe src="/carroussel.html" style="width: 100%; border: none;" onload="this.style.height=this.contentWindow.document.body.scrollHeight + 'px'"></iframe>
+    </div>
+
+
+    <!-- Footer déjà existant -->
+    <footer>
+        <p>&copy; 2024 Littér<em>Art</em>. Tous droits réservés.</p>
+    </footer>
+    <a href="#" class="back-to-top" onclick="scrollToTop(event)">
+        &#8593; <!-- Flèche vers le haut -->
+    </a>
+    <script>
+    function showSharePopup() {
+        const url = window.location.href; // URL de la page
+        const shareUrlField = document.getElementById('share-url');
+    
+        // Mettre l'URL dans le champ
+        shareUrlField.value = url;
+    
+        // Afficher le pop-up
+        document.getElementById('share-popup').style.display = 'block';
+    
+        // Sélectionner automatiquement le texte de l'URL
+        shareUrlField.focus(); // Met le focus sur le champ de texte
+        shareUrlField.select(); // Sélectionne le texte
+        shareUrlField.setSelectionRange(0, shareUrlField.value.length); // Pour mobiles
+    }
+    
+    function closeSharePopup() {
+        document.getElementById('share-popup').style.display = 'none'; // Fermer le pop-up
+    }
+    
+    function copyUrl() {
+        const urlField = document.getElementById('share-url');
+        urlField.select(); // Sélectionner l'URL
+        document.execCommand('copy'); // Copier l'URL
+        alert('URL copiée dans le presse-papier !');
+    }
+    
+    // Exemple pour montrer le pop-up
+    document.querySelector('.share-popup').classList.add('show');
+    
+    function goBack() {
+        const parentPage = "articles.html"; // Page parent par défaut
+    
+        // Vérifie si la page précédente est dans ton site
+        if (document.referrer && document.referrer.includes(window.location.hostname)) {
+            window.history.back(); // Retour à la page précédente si elle est interne au site
+        } else {
+            window.location.href = parentPage; // Redirige vers la page parent
+        }
+    }
+    // Fonctionnalité du menu hamburger
+document.getElementById('burger-menu').addEventListener('click', function() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('menu-active'); // Affiche ou cache le menu
+});
+const burgerMenu = document.getElementById('burger-menu');
+const navLinks = document.getElementById('nav-links');
+
+burgerMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+function scrollToTop(event) {
+  event.preventDefault(); // Empêche l'ajout d'une nouvelle entrée dans l'historique
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Défilement fluide vers le haut
+  });
+}
+    </script>
+        
+</body>
+</html>
