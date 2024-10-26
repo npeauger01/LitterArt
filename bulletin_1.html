@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulletin Ciné - Revue</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+    <header>
+        <div class="container">
+            <nav>
+              <h1 class="logo">
+                <a href="/index.html">Littér<em>Art</em></a>
+            </h1>                
+            <div class="burger-menu" id="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="/index.html">Accueil</a></li>
+                    <li><a href="/revues.html">Bulletin Ciné</a></li>
+                    <li><a href="/articles.html">Articles</a></li>
+                    <li><a href="/equipe.html">Équipe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<body>
+
+    <!-- Section principale de la revue -->
+    <section class="revue-hero">
+        <div class="container">
+            <a href="javascript:history.back()" class="back-button" style="margin-top: 25px;">
+                &#8592; <!-- Flèche à gauche -->
+                Retour
+            </a>
+            <div class="revue-content">
+                <div class="revue-image">
+                    <a href="pdfs/revue 1.pdf" target="_blank">
+                        <img src="couvertures/intro pensée comm.png" alt="Revue Cinéma" class="revue-cover">
+                        <div class="overlay">
+                            <a href="pdfs/revue 1.pdf" target="_blank" class="read-revue-btn">Lire la Revue</a>
+                        </div>
+                    </a>
+                </div>
+                <div class="revue-description">
+                    <h1 class="revue-title">Bulletin Cinéma n°1: INTRODUCTION À  LA PENSÉE COMMUNE</h1>
+                    <p class="revue-summary">Ce premier numéro résulte d’une première intention dénotant d’une extrême motivation qui
+                        se voudrait regrouper des passionnés et un certain nombre de textes, cinématographiques
+                        et littéraires. Ce partage est alors marqué par plusieurs expériences d’écriture : allant du
+                        poème, à la critique, une recension de poèmes d’un artiste aujourd’hui enfoui dans les
+                        montagnes, ou encore de travaux d’archéologues du cinéma, prêt à tout pour regarder et
+                        trouver des chefs d'œuvres. <br><br>
+                        <strong>Rédacteur en chef :</strong> Erwan Mas <br> <br>
+                        <strong>Comité de rédaction :</strong> Romain Danton, Jean Lett, Alex
+                        En collaboration avec le numéro : Thibaud Saliou, Thibaut, Florian Azria, PAM, Pierre
+                        Masson, Jacob Mazon, Jérémy, François Majesté
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-sans-scroll">
+        <div></div>
+        <iframe src="/carroussel.html" style="width: 100%; border: none;" onload="this.style.height=this.contentWindow.document.body.scrollHeight + 'px'"></iframe>
+    </div>
+
+    <!-- Script pour l'overlay modal PDF -->
+    <script>
+        document.querySelectorAll('.revue-cover').forEach(img => {
+            img.addEventListener('click', (e) => {
+                e.preventDefault();
+                const pdfLink = e.target.parentElement.getAttribute('href');
+                window.open(pdfLink, '_blank');
+            });
+        });
+    </script>
+
+<footer>
+    <p>&copy; 2024 Littér<em>Art</em>. Tous droits réservés.</p> 
+</footer>
+<a href="#" class="back-to-top" onclick="scrollToTop(event)">
+    &#8593; <!-- Flèche vers le haut -->
+</a>
+<script src="script.js"> </script>
+</body>
+
+</html>
